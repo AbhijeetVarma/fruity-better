@@ -108,8 +108,8 @@ class Game{
 
                      for(var i =0; i<fruitGroup.length ; i++){
 
-                     
-                     if(fruitGroup.get(i).isTouching(players)){
+                     console.log(player[index-1])
+                     if(fruitGroup.get(i).isTouching(players[player.index-1])){
                          fruitGroup.get(i).destroy();
                        //  console.log("its a working")
                         player.score = player.score+10
